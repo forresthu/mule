@@ -1,9 +1,9 @@
 package org.mule.extensions.introspection.spi;
 
-import org.mule.extensions.introspection.api.MuleExtension;
+import org.mule.extensions.introspection.api.MuleExtensionBuilder;
 
 public interface MuleExtensionDescriber
 {
 
-    MuleExtension describe();
+    void describe(MuleExtensionBuilder builder);
 }

@@ -8,6 +8,8 @@ import java.util.List;
 public interface MuleExtension extends Described
 {
 
+    String getVersion();
+
     List<MuleExtensionConfiguration> getConfigurations();
 
     MuleExtensionConfiguration getConfiguration(String name) throws NoSuchConfigurationException;

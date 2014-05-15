@@ -6,17 +6,14 @@
  */
 package org.mule.extensions.introspection.api;
 
-import java.util.Set;
+import java.util.List;
 
 public interface MuleExtensionConfiguration extends Described
 {
 
-    Set<MuleExtensionParameter> getParameters();
+    public static final String DEFAULT_NAME = "config";
+    public static final String DEFAULT_DESCRIPTION = "Default config";
 
-    /**
-     * Returns an instance with the default values
-     * @return
-     */
-    MuleExtensionConfiguration getDefault();
+    List<MuleExtensionParameter> getParameters();
 
 }

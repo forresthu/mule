@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public final class DefaultMuleExtensionsManager implements MuleExtensionsManager
+final class DefaultMuleExtensionsManager implements MuleExtensionsManager
 {
 
     private final List<MuleExtension> extensions = new LinkedList<MuleExtension>();

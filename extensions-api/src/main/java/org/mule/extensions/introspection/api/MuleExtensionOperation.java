@@ -7,9 +7,9 @@ public interface MuleExtensionOperation extends Described
 
     List<MuleExtensionParameter> getParameters();
 
-    Class<?> getInputType();
+    List<Class<?>> getInputTypes();
 
-    Class<?> getOutputType();
+    List<Class<?>> getOutputType();
 
     /**
      * Returns a new {@link OperationContext}

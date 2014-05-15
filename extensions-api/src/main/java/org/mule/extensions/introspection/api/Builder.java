@@ -4,11 +4,10 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.extensions.internal.builder;
+package org.mule.extensions.introspection.api;
 
-import org.mule.extensions.introspection.api.builder.MuleExtensionOperationBuilder;
-
-public class DefaultMuleExtensionOperationBuilder implements MuleExtensionOperationBuilder
+public interface Builder<T>
 {
 
+    T build();
 }
